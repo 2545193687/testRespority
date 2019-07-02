@@ -1,0 +1,25 @@
+stages:
+   - build
+   - deploy
+build:
+  stage: build
+  script:
+    - cp target/admin-demo-web*.war ci/ROOT.war
+    - cd ci
+    - docker build -t mithrandirw/admin-demo-web:1.0.0 .
+  tags:
+    - test
+deploy:
+   stage: deploy
+   script:
+#      - docker stop deviceplatform-deployment
+#      - docker rm deviceplatform-deployment
+      - docker login --username=461852830@qq.com registry.cn-hangzhou.aliyuncs.com -p xxxxxxxx...
+      - docker tag mithrandirw/deviceplatform-deployment:1.0.4 registry.cn-hangzhou.aliyuncs.com/xmjdt/deviceplatform-customer-deployment:1.0.4
+      - docker push registry.cn-hangzhou.aliyuncs.com/xmjdt/deviceplatform-customer-deployment:1.0.4
+      - docker run -p 58084:8080 -p 22881:50880 --name deviceplatform-deployment -d mithrandirw/deviceplatform-deployment:1.0.4 "192.168.1.235"
+   environment:
+      name: Docker Test Environment
+      url: http://192.168.1.235:58084
+   tags:
+      - test
