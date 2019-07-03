@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cn.mithrandirw.tf:utils:1.0-20180906">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/mithrandirw/tf/utils/1.0-20180906/utils-1.0-20180906.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/mithrandirw/tf/utils/1.0-20180906/utils-1.0-20180906-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/mithrandirw/tf/utils/1.0-20180906/utils-1.0-20180906-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
