@@ -15,9 +15,11 @@ public class Stu extends IdEntity {
 	public static final String FIELD_NAME = "name";
 
 	public static final String FIELD_CODE = "code";
+	/**
+	 * 分支测试
+	 */
 
-	
-    /**
+	/**
      * 姓名
      */
 	private String name;		
