@@ -3,8 +3,6 @@ package cn.xmjdt.tourismplatform.domain.entity;
 import cn.mithrandirw.tf.admin.commons.domain.IdEntity;
 import lombok.Data;
 import javax.persistence.Table;
-import java.util.Date;
-
 /**
  * Stu
  * @author codegen
